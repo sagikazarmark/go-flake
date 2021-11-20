@@ -16,6 +16,8 @@ buildGoModule rec {
   # doCheck = false;
   subPackages = [ "." ];
 
+  allowGoReference = true;
+
   ldflags = [
     "-s"
     "-w"
