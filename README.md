@@ -12,7 +12,7 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    gopkgs.url = "github:sagikazarmark/go-flakes";
+    gopkgs.url = "github:sagikazarmark/go-flake";
     gopkgs.inputs.nixpkgs.follows = "nixpkgs";
   };
 
@@ -37,7 +37,7 @@ Or using overlay:
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    gopkgs.url = "github:sagikazarmark/go-flakes";
+    gopkgs.url = "github:sagikazarmark/go-flake";
     gopkgs.inputs.nixpkgs.follows = "nixpkgs";
   };
 
