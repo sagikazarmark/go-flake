@@ -25,11 +25,12 @@
         gqlgen = callPackage ./pkgs/gqlgen/default.nix { };
         mga = callPackage ./pkgs/mga/default.nix { };
         protoc-gen-kit = callPackage ./pkgs/protoc-gen-kit/default.nix { };
+        ent = callPackage ./pkgs/ent/default.nix { };
       };
 
       packages = forAllSystems (system:
         {
-          inherit (nixpkgsFor.${system}) gqlgen mga protoc-gen-kit;
+          inherit (nixpkgsFor.${system}) gqlgen mga protoc-gen-kit ent;
         }
       );
     };
