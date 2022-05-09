@@ -1,6 +1,6 @@
-{ lib, buildGo117Module, fetchFromGitHub }:
+{ lib, buildGoModule, fetchFromGitHub }:
 
-buildGo117Module rec {
+buildGoModule rec {
   name = "protoc-gen-kit";
   version = "0.4.0";
 
@@ -11,7 +11,7 @@ buildGo117Module rec {
     sha256 = "sha256-c1PW39GXZ/ONDSi7xb8eLZm0FG2fIinL+1AKXyhpl/k=";
   };
 
-  vendorSha256 = "sha256-uNhFXLlAk9rWgQMVQw30KMMIhPHdVfX3/8izbOB9pXA=";
+  vendorSha256 = "sha256-ZCR+b/2bfmBX/jG2AzeVeLlDCXma8LUJH7IwAUEFjDA=";
 
   proxyVendor = true;
 
