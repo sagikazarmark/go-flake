@@ -2,13 +2,13 @@
 
 buildGo118Module rec {
   name = "mga";
-  version = "0.6.1";
+  version = "0.7.0";
 
   src = fetchFromGitHub {
     owner = "sagikazarmark";
     repo = "mga";
     rev = "v${version}";
-    sha256 = "sha256-LAEZwm7yIb1jxns3rH/8T+NMnebUpyB55Q/Pt403TuA=";
+    sha256 = "sha256-Nz8hWesPWZzwBbugS/9OeQhRK2dqhAzLBUHkU+Eb/u0=";
   };
 
   vendorSha256 = "sha256-1NTNWVPp4y8cma1PhmizG6Ao4HCQDE+SYxaWisGkhhk=";
