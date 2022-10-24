@@ -1,17 +1,17 @@
-{ lib, buildGo118Module, fetchFromGitHub }:
+{ lib, buildGoModule, fetchFromGitHub }:
 
-buildGo118Module rec {
+buildGoModule rec {
   name = "mga";
-  version = "0.7.0";
+  version = "0.9.0";
 
   src = fetchFromGitHub {
     owner = "sagikazarmark";
     repo = "mga";
     rev = "v${version}";
-    sha256 = "sha256-Nz8hWesPWZzwBbugS/9OeQhRK2dqhAzLBUHkU+Eb/u0=";
+    sha256 = "sha256-3wY7pqr/M6ACBwQCbJSaSb4h6PUv+Ea+TU9goGE7sqI=";
   };
 
-  vendorSha256 = "sha256-1NTNWVPp4y8cma1PhmizG6Ao4HCQDE+SYxaWisGkhhk=";
+  vendorSha256 = "sha256-g599K6ullvy+fiRPNMdyRfaYCWPK8yB/Od9d+SrzF1w=";
 
   proxyModule = true;
 
