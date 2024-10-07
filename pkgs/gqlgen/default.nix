@@ -2,16 +2,16 @@
 
 buildGoModule rec {
   name = "gqlgen";
-  version = "0.14.0";
+  version = "0.17.55";
 
   src = fetchFromGitHub {
     owner = "99designs";
     repo = "gqlgen";
     rev = "v${version}";
-    sha256 = "sha256-pBvPTLNrDZMyoxtsin+MrUCC3www864TPBrOCFNb2U8=";
+    sha256 = "sha256-xT/Uy+tPTf1oqJ2OX9KCnBPGxgZfz2Q04ky4qz1ucZA=";
   };
 
-  vendorSha256 = "sha256-YWoe3lQS+0bMfUiNzC+n7qlQbCS8WO+jLuaQk5X0+v8=";
+  vendorHash = "sha256-jxKwhSuNAGU/gpHq6ChSnaI2H1lmqw/WTf4hL496uT0=";
 
   # doCheck = false;
   subPackages = [ "." ];
