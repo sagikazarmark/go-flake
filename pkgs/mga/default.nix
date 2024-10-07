@@ -2,16 +2,16 @@
 
 buildGoModule rec {
   name = "mga";
-  version = "0.9.0";
+  version = "0.10.0";
 
   src = fetchFromGitHub {
     owner = "sagikazarmark";
     repo = "mga";
     rev = "v${version}";
-    sha256 = "sha256-3wY7pqr/M6ACBwQCbJSaSb4h6PUv+Ea+TU9goGE7sqI=";
+    sha256 = "sha256-YuQvAFZ0lnDCMNZXaYt/1bumDJ/R/BFciWgRdbF7r78=";
   };
 
-  vendorHash = "sha256-g599K6ullvy+fiRPNMdyRfaYCWPK8yB/Od9d+SrzF1w=";
+  vendorHash = "sha256-p/h0nIYVuWrAaWo5A96DrFbHVRrtuiHYff5rHBbW3z4=";
 
   proxyModule = true;
 

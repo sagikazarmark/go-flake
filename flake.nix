@@ -23,9 +23,13 @@
     {
       overlay = final: prev: with final; {
         gqlgen = callPackage ./pkgs/gqlgen/default.nix { };
-        mga = callPackage ./pkgs/mga/default.nix { };
+        mga = callPackage ./pkgs/mga/default.nix {
+          buildGoModule = buildGo123Module;
+        };
         protoc-gen-kit = callPackage ./pkgs/protoc-gen-kit/default.nix { };
-        protoc-gen-go-kit = callPackage ./pkgs/protoc-gen-go-kit/default.nix { };
+        protoc-gen-go-kit = callPackage ./pkgs/protoc-gen-go-kit/default.nix {
+          buildGoModule = buildGo123Module;
+        };
         ent = callPackage ./pkgs/ent/default.nix { };
       };
 
