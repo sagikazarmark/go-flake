@@ -2,13 +2,13 @@
 
 buildGoModule rec {
   name = "protoc-gen-kit";
-  version = "0.6.0";
+  version = "0.6.1";
 
   src = fetchFromGitHub {
     owner = "sagikazarmark";
     repo = "protoc-gen-go-kit";
     rev = "v${version}";
-    sha256 = "sha256-Xw0Hx9AC4R6QgGeduTY5nfRh5t2UOO6dlve78si6nf4=";
+    sha256 = "sha256-LgB+w1sZozR+k4bLUPFkPlxTZk/4sqo1j/ukR9nUKzI=";
   };
 
   vendorHash = "sha256-U16VXGurRGWTFLASw1MMnn/Qv5TeWkO2b8NpnSFBp9Y=";
